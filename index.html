@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Code Review Sign Up</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        
+        <section id="intro">
+            <div class="container">
+                <h1>The Code Review</h1>
+            </div>
+
+            <h2>Signup for our newsletter</h2>
+            <p class="intro-text">Get the latest news on how your code is doing right in your inbox</p>
+
+            <hr class="thick-line">
+            <hr class="line">
+        </section>
+
+        <form>
+            <fieldset id="contact-info">  <!-- Contact information form contents  -->
+                <legend>Contact Information</legend>
+
+                <label for="full-name">Full Name</label>
+                <input type="text" id="full-name" name="user-name" placeholder="Required">
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="user-email" placeholder="Required">
+
+                <label for="phone-number">Phone Number</label>
+                <input type="text" id="phone-number" name="user-phone-number">
+
+                <label for="street-adress">Street Address</label>
+                <input type="text" id="street-address" name="user-street-address">
+
+                <label for="city">City</label>
+                <input type="text" id="city" name="user-city">
+
+                <label for="state">State</label>
+                <select id="state" name="user-state">
+                    <option value="blank"> </option>
+                    <option value="alabama">AL</option>
+                    <option value="alaska">AK</option>
+                    <option value="arizona">AZ</option>
+                    <option value="arkansas">AR</option>
+                    <option value="california">CA</option>
+                    <option value="colorado">CO</option>
+                    <option value="connecticut">CT</option>
+                </select>
+
+                <label for="zip">Zip Code</label>
+                <input type="number" id="zip" name="user-zip">
+            </fieldset>
+
+            <fieldset id="newsletter-form"> <!-- Newsletter form section start-->
+                <legend>Newsletter</legend> 
+
+                <p>Select the newsletters you would like to receive</p>
+                
+                <input type="checkbox" id="html-news" name="user-pref-html">
+                <label for="html-news">HTML News</label>
+
+                <input type="checkbox" id="css-news" name="user-pref-css">
+                <label for="css-news">CSS News</label>
+
+                <input type="checkbox" id="javascript-news" name="user-pref-js">
+                <label for="javascript-news">Javascript News</label>
+
+                <p>Newsletter format</p>
+
+                <input type="radio" id="html-news" name="news-html">
+                <label for="html-news">HTML</label>
+
+                <input type="radio" id="plain-text-news" name="news-plain-text">
+                <label for="plain-text">Plain text</label>
+
+                <label for="feedback">Other topics you'd like to hear about</label>
+                <textarea id="feedback" name="user-feedback">
+                </textarea>
+
+                <button type="submit"> Sign Up</button>
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <p class="footer-text">Copyright The Code Review</p>
+
+    </footer>
+
+</body>
+</html>
