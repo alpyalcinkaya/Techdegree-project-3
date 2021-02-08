@@ -19,6 +19,11 @@ h2 {
     text-align: center;
 }
 
+.intro-text{
+    padding: 1em;
+
+}
+
 /* Form Element Styling*/
 
 fieldset{
@@ -37,11 +42,32 @@ label{
 
 }
 
+input[type=text],
+input[type=email],
+select{
+    width: 95%;
+    padding: 5px 0px;
+}
+
+option::first{
+    color:lightgray;
+
+}
+
+input::placeholder{
+    text-align: right;
+    font-style: italic;
+    padding-right: .75em;
+
+}
+
+
 .container {
     margin: -8px;
     width: 105%;
 
 }
+
 
 .intro-text{
     text-align: center;
