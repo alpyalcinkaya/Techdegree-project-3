@@ -2,6 +2,8 @@
     font-family: 'Lora', serif;
 }
 
+/* Element Styles */
+
 h1 {
     display: block;
     text-align: center;
@@ -19,15 +21,16 @@ h2 {
     text-align: center;
 }
 
-.intro-text{
-    padding: 1em;
-
+p{
+    color:  rgb(129, 128, 128);
 }
 
-/* Form Element Styling*/
+
+/* Form Element Styles*/
 
 fieldset{
     border:0;
+    padding: 5%;
 }
 
 legend{
@@ -39,19 +42,30 @@ legend{
 
 label{
     display: block;
-
+    color:  rgb(129, 128, 128);
 }
+
+/* Contact Information Section Styles*/
 
 input[type=text],
 input[type=email],
+input[type=number],
 select{
-    width: 95%;
-    padding: 5px 0px;
+    width: 97%;
+    padding: 15px 5px;
+    border: none;
+    margin: 15px 0;
+    border-radius: 5px;
+    background-color: rgb(236, 236, 236);
 }
 
-option::first{
-    color:lightgray;
+input[type=number]{
+    width: 45%;
 
+}
+
+select#state{
+    color:rgb(90, 88, 88)
 }
 
 input::placeholder{
@@ -61,18 +75,72 @@ input::placeholder{
 
 }
 
+input:focus, 
+select:focus, 
+textarea:focus{
+    border: 4px solid rgb(9, 9, 192);
+    border-radius: 5px;
+    transition: width 2s;
+}
+
+/* Newsletter Section Styles*/
+
+input[type=checkbox] + label,
+input[type=radio] +label{
+    display: inline-block;
+    margin-right: 55%;
+    width: 40%;
+    padding: 6px 0px;
+
+}
+
+#feedback-label{
+    margin: 20px 0;
+}
+
+textarea{
+    width: 97%;
+    padding: 17px 5px;
+    border: none;
+    background-color: rgb(236, 236, 236);
+    border-radius: 5px;
+    margin-bottom: 20px;
+
+}
+
+button{
+    display: block;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    border: 0;
+    margin: 0 auto; 
+    background-color: #52bab3;
+    padding: 20px;
+    width: 90%;
+}
+
+/* Footer Styles*/
+
+.footer-text{
+    text-align: center;
+    font-style: italic;
+    font-size:.90em;
+}
+
+/* Class Styles */
+
+.intro-text{
+    padding: 20px;
+    text-align: center;
+    font-size: 0.90em;
+    color: rgb(129, 128, 128);
+
+}
 
 .container {
     margin: -8px;
     width: 105%;
-
-}
-
-
-.intro-text{
-    text-align: center;
-    font-size: 0.90em;
-    color: rgb(172, 170, 170);
 
 }
 
@@ -91,3 +159,39 @@ input::placeholder{
     height: 2px;
     margin-top: 0;
 }
+
+/* Media Queries */
+
+@media screen and (min-width: 768px){
+
+    form{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    label, 
+    input[type=text],
+    input[type=number],
+    input[type=email]{
+        display: inline-block;
+    }
+
+    input[type=text],
+    input[type=email],
+    select{
+        width: 75%;
+    }
+
+    input[type=number]{
+        width: 20%;
+    }
+    label{
+        width: 22%;
+    }
+
+    input[type=checkbox] + label,
+    input[type=radio] +label{
+    margin-right: 57%;
+    }
+
+} 

@@ -12,7 +12,6 @@
 </head>
 <body>
     <main>
-        
         <section id="intro">
             <div class="container">
                 <h1>The Code Review</h1>
@@ -30,10 +29,10 @@
                 <legend>Contact Information</legend>
 
                 <label for="full-name">Full Name</label>
-                <input type="text" id="full-name" name="user-name" placeholder="Required">
+                <input type="text" id="full-name" name="user-name" placeholder="Required" required>
 
                 <label for="email">Email Address</label>
-                <input type="email" id="email" name="user-email" placeholder="Required">
+                <input type="email" id="email" name="user-email" placeholder="Required" required>
 
                 <label for="phone-number">Phone Number</label>
                 <input type="text" id="phone-number" name="user-phone-number">
@@ -60,6 +59,8 @@
                 <input type="number" id="zip" name="user-zip">
             </fieldset>
 
+            <hr class="line">
+
             <fieldset id="newsletter-form"> <!-- Newsletter form section start-->
                 <legend>Newsletter</legend> 
 
@@ -75,14 +76,14 @@
                 <label for="javascript-news">Javascript News</label>
 
                 <p>Newsletter format</p>
+                
+                <input type="radio" id="html-format" name="format-choice">
+                <label for="html-format">HTML</label>
 
-                <input type="radio" id="html-news" name="news-html">
-                <label for="html-news">HTML</label>
-
-                <input type="radio" id="plain-text-news" name="news-plain-text">
-                <label for="plain-text">Plain text</label>
-
-                <label for="feedback">Other topics you'd like to hear about</label>
+                <input type="radio" id="plain-text-format" name="format-choice">
+                <label for="plain-text-format">Plain text</label>
+               
+                <label id="feedback-label" for="feedback">Other topics you'd like to hear about</label>
                 <textarea id="feedback" name="user-feedback">
                 </textarea>
 
@@ -91,7 +92,7 @@
         </form>
     </main>
 
-    <footer>
+    <footer> 
         <p class="footer-text">Copyright The Code Review</p>
 
     </footer>
