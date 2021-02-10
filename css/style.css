@@ -28,6 +28,12 @@ p{
 
 /* Form Element Styles*/
 
+form{
+    width: 80%;
+    margin: 0 auto;
+}
+
+
 fieldset{
     border:0;
     padding: 5%;
@@ -51,6 +57,7 @@ input[type=text],
 input[type=email],
 input[type=number],
 select{
+    display: inline-block;
     width: 97%;
     padding: 15px 5px;
     border: none;
@@ -80,7 +87,7 @@ select:focus,
 textarea:focus{
     border: 4px solid rgb(9, 9, 192);
     border-radius: 5px;
-    transition: width 2s;
+    transition: width 1px;
 }
 
 /* Newsletter Section Styles*/
@@ -88,8 +95,8 @@ textarea:focus{
 input[type=checkbox] + label,
 input[type=radio] +label{
     display: inline-block;
-    margin-right: 55%;
-    width: 40%;
+    margin-right: 44%;
+    width: 50%;
     padding: 6px 0px;
 
 }
@@ -128,19 +135,25 @@ button{
     font-size:.90em;
 }
 
-/* Class Styles */
+/* Class and ID Styles */
+
+#intro{
+    background-color: lightgray;
+
+}
+
 
 .intro-text{
     padding: 20px;
     text-align: center;
     font-size: 0.90em;
-    color: rgb(129, 128, 128);
+    color: rgb(104, 104, 104);
 
 }
 
 .container {
-    margin: -8px;
-    width: 105%;
+   
+    width: 100%;
 
 }
 
@@ -164,10 +177,6 @@ button{
 
 @media screen and (min-width: 768px){
 
-    form{
-        width: 80%;
-        margin: 0 auto;
-    }
 
     label, 
     input[type=text],
@@ -189,9 +198,22 @@ button{
         width: 22%;
     }
 
+    .choice-label{
+        margin-right: 56%;
+
+    }
+
+    #feedback-label{
+        width: 100%;
+        margin-right: 0;
+    }
+
+
     input[type=checkbox] + label,
     input[type=radio] +label{
-    margin-right: 57%;
+    margin-right:46%;
     }
+
+
 
 } 
