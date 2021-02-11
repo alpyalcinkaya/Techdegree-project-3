@@ -152,6 +152,9 @@ button:hover{
 
 }
 
+#newsletter-form input{
+    margin-right: 5px;
+}
 
 .intro-text{
     padding: 20px;
